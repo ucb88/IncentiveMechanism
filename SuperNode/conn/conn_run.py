@@ -1,0 +1,11 @@
+import SimpleXMLRPCServer
+import  conn_dispatcher as dis
+import conn_settings as conn
+
+
+def start():
+    # A simple server with simple arithmetic functions
+    server = SimpleXMLRPCServer.SimpleXMLRPCServer((conn.SN_IP,conn.SN_PORT), dis.LoggingSimpleXMLRPCRequestHandler, allow_none=True)
+    print "Listening on port 8000..."
+    server.register_instance(dis.Queries())
+    server.serve_forever()
