@@ -25,7 +25,10 @@ def main():
     capacity = info.num_of_lxcs()
 
     try:
-        res = proxy.register(10,4) #capacity, capacity)
+        res = proxy.request(1,2)
+        #res = proxy.leaveResources()
+        #res = proxy.request(1,2)
+        #res = proxy.register(capacity, capacity)
         print res
     except socket.error as e:
         if e.errno == errno.ECONNREFUSED  or e.errno == 101:
