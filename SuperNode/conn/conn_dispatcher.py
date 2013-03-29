@@ -1,6 +1,7 @@
 import SimpleXMLRPCServer
 from SuperNode.query_handler import register as res
 from SuperNode.query_handler import request as req
+from SuperNode.query_handler import leave as l
 from SuperNode.query_handler import heartbeat as h
 from SuperNode.query_handler import nondefined as non
 
@@ -54,6 +55,9 @@ class Queries:
 
         def request(self, reqAmount, reqDuration):
                 return req.Request(ON_IP,ON_PORT,reqAmount, reqDuration)
+
+        def leaveResources (self):
+                return l.Leave(ON_IP,ON_PORT)
 
         def heartbeat(self):
                 return h.heartbeat.Heartbeat(ON_IP,ON_PORT)

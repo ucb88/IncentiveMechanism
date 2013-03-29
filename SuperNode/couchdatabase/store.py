@@ -30,6 +30,9 @@ class Database:
     def is_exist (self, doc_id):
         return self.db.__contains__(doc_id)
 
+    def get_avail (self, doc_id):
+        return self.db[doc_id]['avail']
+
     def update_credit(self, doc_id, newCredit) :
         if self.is_exist(doc_id):
             if self.db[doc_id].has_key('credit'):
@@ -58,23 +61,26 @@ class Database:
         print "\n"
 
 
-def create_database():
+def call_db():
     db = Database()
     return db
 
 
 if __name__ == "__main__":
-    myDB = create_database()
-    myDB.store_document({'_id':'first', 'credit':34, 'capacity':100})
-    myDB.store_document({'_id':'second', 'credit':14, 'capacity':120})
-    myDB.store_document({'_id':'third', 'credit':4, 'capacity':130})
+    myDB = call_db()
+    myDB.store_document({'_id':'111', 'info' : { 'capacity':100, 'resoure':34, 'avail' : 34, 'credit':34},
+                                       'providedTo' : {},'suppliedFrom' : {}})
+    myDB.store_document({'_id':'222', 'info' : { 'capacity':200, 'resoure':134, 'avail' : 134, 'credit':134},
+                                       'providedTo' : {},'suppliedFrom' : {}})
+    myDB.store_document({'_id':'333', 'info' : { 'capacity':300, 'resoure':14, 'avail' : 14, 'credit':14},
+                                       'providedTo' : {},'suppliedFrom' : {}})
+
     myDB.print_db()
 
-    doc = myDB.get_document('third')
-    doc['capacity'] = 1155
-    myDB.update_document('third', doc)
+    doc = myDB.get_document('333')
+    doc['info']['capacity'] = 1111
+    myDB.update_document('333', doc)
     myDB.print_db()
 
-    myDB.update_credit('first',14567)
-    myDB.print_db()
+
 
