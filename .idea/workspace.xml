@@ -4,17 +4,20 @@
     <list default="true" id="16653a3c-38df-4756-82c5-002827ad8842" name="Default" comment="" />
     <ignored path="IncentiveMech.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/conn_settings.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364288727363" ignored="false" />
+    <file path="/conn_settings.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364560625534" ignored="false" />
     <file path="/dispatcher.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364288897669" ignored="false" />
-    <file path="/conn_run.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364299430915" ignored="false" />
+    <file path="/conn_run.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364561846952" ignored="false" />
     <file path="/main.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364299322239" ignored="false" />
     <file path="/__init__.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364290405150" ignored="false" />
     <file path="/conn_dispatcher.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364298819347" ignored="false" />
-    <file path="/request.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364297607682" ignored="false" />
+    <file path="/request.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364563909900" ignored="false" />
     <file path="/register.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364296139801" ignored="false" />
     <file path="/heartbeat.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364297672930" ignored="false" />
     <file path="/nondefined.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364298806708" ignored="false" />
     <file path="/test.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364299950447" ignored="false" />
+    <file path="/paths.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364559769826" ignored="false" />
+    <file path="/extract_data.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364560424704" ignored="false" />
+    <file path="/leave.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364563586829" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,49 +34,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="conn_settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_settings.py">
+      <file leaf-file-name="conn_run.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="12" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SuperNode/couchbase/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="store.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SuperNode/couchbase/store.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="store.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Desktop/monitoring/confine-monitor-server-couchbase/server/couchbase/store.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="13" selection-start="865" selection-end="865" vertical-scroll-proportion="0.33236995">
+            <state line="27" column="34" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#16#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SuperNode/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="19" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -82,6 +49,78 @@
         <entry file="file://$PROJECT_DIR$/OrdinaryNode/main_client.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="7" column="10" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conn_settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conn_dispatcher.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_dispatcher.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="58" column="26" selection-start="2101" selection-end="2115" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leave.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/leave.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="31" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="request.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/request.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="33" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generate_views.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/views/generate_views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="56" selection-start="251" selection-end="251" vertical-scroll-proportion="0.19195612">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/register.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="29" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_server.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SuperNode/main_server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="10" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conn_run.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="26" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -97,30 +136,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/SuperNode/query_handler/__init__.py" />
-        <option value="$PROJECT_DIR$/SuperNode/query_handler/register.py" />
-        <option value="$PROJECT_DIR$/SuperNode/conn/conn_run.py" />
-        <option value="$PROJECT_DIR$/SuperNode/conn/conn_settings.py" />
-        <option value="$PROJECT_DIR$/SuperNode/query_handler/request.py" />
-        <option value="$PROJECT_DIR$/SuperNode/query_handler/heartbeat.py" />
-        <option value="$PROJECT_DIR$/SuperNode/query_handler/nondefined.py" />
-        <option value="$PROJECT_DIR$/SuperNode/conn/conn_dispatcher.py" />
-        <option value="$PROJECT_DIR$/OrdinaryNode/conn_settings.py" />
         <option value="$PROJECT_DIR$/OrdinaryNode/conn_run.py" />
         <option value="$PROJECT_DIR$/OrdinaryNode/conn/__init__.py" />
         <option value="$PROJECT_DIR$/OrdinaryNode/conn/main.py" />
-        <option value="$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/SuperNode/__init__.py" />
         <option value="$PROJECT_DIR$/SuperNode/couchbase/__init__.py" />
+        <option value="$PROJECT_DIR$/OrdinaryNode/sliver_info/__init__.py" />
+        <option value="$PROJECT_DIR$/OrdinaryNode/slivers/paths.py" />
+        <option value="$PROJECT_DIR$/OrdinaryNode/slivers/extract_data.py" />
+        <option value="$PROJECT_DIR$/OrdinaryNode/conn/conn_settings.py" />
+        <option value="$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py" />
+        <option value="$PROJECT_DIR$/SuperNode/conn/conn_settings.py" />
+        <option value="$PROJECT_DIR$/SuperNode/conn/conn_run.py" />
+        <option value="$PROJECT_DIR$/SuperNode/query_handler/leave.py" />
+        <option value="$PROJECT_DIR$/SuperNode/query_handler/request.py" />
+        <option value="$PROJECT_DIR$/SuperNode/couchdatabase/views/generate_views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="24" />
-    <option name="width" value="1280" />
-    <option name="height" value="752" />
+    <option name="x" value="65" />
+    <option name="y" value="52" />
+    <option name="width" value="1855" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -148,7 +187,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -163,11 +201,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="confine-monitor-server-couchbase" />
+              <option name="myItemId" value="IncentiveMechanism" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -177,67 +211,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="confine-monitor-server-couchbase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IncentiveMech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="confine-monitor-server-couchbase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="couchbase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IncentiveMech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monitoring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IncentiveMech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IncentiveMech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IncentiveMech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IncentiveMech" />
+              <option name="myItemId" value="IncentiveMechanism" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -251,7 +225,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="IncentiveMech" />
+              <option name="myItemId" value="IncentiveMechanism" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -259,18 +233,139 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="couchbase" />
+              <option name="myItemId" value="query_handler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IncentiveMech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IncentiveMechanism" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="couchdatabase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IncentiveMech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IncentiveMechanism" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="couchdatabase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IncentiveMech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IncentiveMechanism" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SuperNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IncentiveMech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IncentiveMechanism" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrdinaryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IncentiveMech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IncentiveMechanism" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrdinaryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slivers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IncentiveMech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IncentiveMechanism" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrdinaryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/monitoring" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/OrdinaryNode/slivers/paths.py" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <PyConsoleSettings />
+    </option>
+    <option name="myDjangoConsoleState">
+      <PyConsoleSettings />
+    </option>
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -278,7 +373,41 @@
       <recent name="$PROJECT_DIR$/OrdinaryNode/conn" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main_client">
+  <component name="RunManager" selected="Python.main_server">
+    <configuration default="false" name="store" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SuperNode/couchdatabase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="IncentiveMech" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SuperNode/couchdatabase/store.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="main_server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SuperNode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="IncentiveMech" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SuperNode/main_server.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <configuration default="false" name="conn_run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -286,65 +415,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SuperNode/conn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OrdinaryNode/conn" />
       <option name="IS_MODULE_SDK" value="true" />
       <module name="IncentiveMech" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SuperNode/conn/conn_run.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="conn_dispatcher" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SuperNode/conn" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="IncentiveMech" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SuperNode/conn/conn_dispatcher.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Doctests in /home/umitcavus/PycharmProjects/IncentiveMech/SuperNode/conn" type="tests" factoryName="Doctests" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SuperNode/conn" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="IncentiveMech" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="$PROJECT_DIR$/SuperNode/conn" />
-      <option name="TEST_TYPE" value="TEST_FOLDER" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="conn_settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OrdinaryNode" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="IncentiveMech" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OrdinaryNode/conn/conn_settings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -367,6 +442,23 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="generate_views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SuperNode/couchdatabase/views" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="IncentiveMech" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SuperNode/couchdatabase/views/generate_views.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -376,7 +468,7 @@
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
-      <module name="monitoring" />
+      <module name="IncentiveMech" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
@@ -389,7 +481,7 @@
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
-      <module name="monitoring" />
+      <module name="IncentiveMech" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
@@ -422,20 +514,41 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.conn_run" />
-      <item index="1" class="java.lang.String" itemvalue="Python.conn_dispatcher" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Doctests in /home/umitcavus/PycharmProjects/IncentiveMech/SuperNode/conn" />
-      <item index="3" class="java.lang.String" itemvalue="Python.conn_settings" />
-      <item index="4" class="java.lang.String" itemvalue="Python.main_client" />
+      <item index="0" class="java.lang.String" itemvalue="Python.store" />
+      <item index="1" class="java.lang.String" itemvalue="Python.main_server" />
+      <item index="2" class="java.lang.String" itemvalue="Python.conn_run" />
+      <item index="3" class="java.lang.String" itemvalue="Python.main_client" />
+      <item index="4" class="java.lang.String" itemvalue="Python.generate_views" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.main_client" />
-        <item index="1" class="java.lang.String" itemvalue="Python.conn_settings" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.main_server" />
+        <item index="1" class="java.lang.String" itemvalue="Python.generate_views" />
+        <item index="2" class="java.lang.String" itemvalue="Python.main_client" />
+        <item index="3" class="java.lang.String" itemvalue="Python.conn_run" />
+        <item index="4" class="java.lang.String" itemvalue="Python.store" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="16653a3c-38df-4756-82c5-002827ad8842" name="Default" comment="" />
@@ -445,23 +558,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1280" height="752" extended-state="0" />
+    <frame x="65" y="52" width="1855" height="1028" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32828283" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25405845" sideWeight="0.67171717" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25706372" sideWeight="0.66079295" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294509" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33920705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32828283" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -523,24 +636,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/conn_settings.py">
+    <entry file="file://$PROJECT_DIR$/OrdinaryNode/slivers/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.08571429" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OrdinaryNode/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OrdinaryNode/main_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="10" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -552,82 +650,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/couchbase/__init__.py">
+    <entry file="file://$PROJECT_DIR$/OrdinaryNode/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="19" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py">
+    <entry file="file://$PROJECT_DIR$/OrdinaryNode/slivers/paths.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="38" selection-start="591" selection-end="591" vertical-scroll-proportion="0.6709797">
+        <state line="1" column="22" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_run.py">
+    <entry file="file://$PROJECT_DIR$/OrdinaryNode/slivers/extract_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="23" selection-start="395" selection-end="395" vertical-scroll-proportion="0.22727273">
-          <folding />
+        <state line="22" column="26" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/request.py">
+    <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/conn_settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="183" selection-end="183" vertical-scroll-proportion="0.22181146">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/register.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="31" selection-start="136" selection-end="136" vertical-scroll-proportion="0.11090573">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_dispatcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="39" selection-start="2207" selection-end="2207" vertical-scroll-proportion="0.8141593">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/main_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="123" vertical-scroll-proportion="0.0">
+        <state line="2" column="16" selection-start="40" selection-end="53" vertical-scroll-proportion="0.050083473">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="12" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
+        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/couchbase/settings.py">
+    <entry file="file://$PROJECT_DIR$/SuperNode/main_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="7" column="10" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/couchbase/store.py">
+    <entry file="file://$PROJECT_DIR$/OrdinaryNode/main_client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="7" column="10" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/monitoring/confine-monitor-server-couchbase/server/couchbase/store.py">
+    <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="13" selection-start="865" selection-end="865" vertical-scroll-proportion="0.33236995">
+        <state line="27" column="34" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/register.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="29" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="26" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_dispatcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="26" selection-start="2101" selection-end="2115" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/leave.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="31" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="33" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/views/generate_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="56" selection-start="251" selection-end="251" vertical-scroll-proportion="0.19195612">
+          <folding />
         </state>
       </provider>
     </entry>

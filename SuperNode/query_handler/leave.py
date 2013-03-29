@@ -10,7 +10,7 @@ def Leave(ON_IP,ON_PORT):
         store.call_db().update_document(id, tempSupplierDoc)
         store.call_db().update_document(ON_IP, tempDoc)
 
-
+    return "ALL occupied resources are left"
 
 def regain(allocaterId, tempSupplierDoc):
 

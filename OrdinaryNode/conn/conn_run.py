@@ -2,6 +2,7 @@ import xmlrpclib
 import errno
 import socket
 import time
+from OrdinaryNode.slivers import  extract_data as info
 
 from OrdinaryNode.conn import conn_settings as set
 
@@ -19,10 +20,12 @@ def retry():
         raise
 
 def main():
-    proxy = xmlrpclib.ServerProxy("http://localhost:8001/")
+    proxy = xmlrpclib.ServerProxy(set.SN_IP+":"+set.SN_PORT)
+
+    capacity = info.num_of_lxcs()
 
     try:
-        res = proxy.register(10,4)
+        res = proxy.register(10,4) #capacity, capacity)
         print res
     except socket.error as e:
         if e.errno == errno.ECONNREFUSED  or e.errno == 101:

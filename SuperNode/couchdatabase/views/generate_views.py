@@ -5,7 +5,7 @@ from SuperNode.couchdatabase import store
 
 def sorted_list():
     map_func_for_sorted = """function(doc) { \
-                                if(doc['info'].credit > 0) \
+                                if(doc['info'].credit >= 0) \
                                     emit(doc['info'].credit, doc._id); \
                     }"""
 

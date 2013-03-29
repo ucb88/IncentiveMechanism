@@ -12,11 +12,10 @@ def Request(ON_IP,ON_PORT,amount, duration):
     doc = store.call_db().get_document(ON_IP)
     totalAvailResInTheSystem = view.total_availablity()
 
-    print doc['info']['credit'], amount, doc['info']['credit'] >= amount, totalAvailResInTheSystem
 
     if(doc['info']['credit'] >= amount):
         if(totalAvailResInTheSystem >= amount):
-            decision(doc, amount, duration)
+            return decision(doc, amount, duration)
         else:
             return "There is not enough resource to meet your request."
     else :
@@ -46,7 +45,8 @@ def decision(doc, amount, duration) :
             tempSharedAmount = 0
             print "RES:",res, " AMOUNT:",amount
 
-            if res > amount:
+            if res >= amount:
+                print "BURAAA"
                 res = res - amount
                 tempSharedAmount = amount
                 isFullySupplied = 1
