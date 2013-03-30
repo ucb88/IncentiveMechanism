@@ -1,4 +1,5 @@
 from SuperNode.couchdatabase import store
+import coefficients as k
 
 def Register(ON_IP,ON_PORT,capacity,resource):
     print "ON_IP",ON_IP, \
@@ -13,7 +14,8 @@ def Register(ON_IP,ON_PORT,capacity,resource):
                     "resource" : resource, \
                     "avail" : resource, \
                     "credit" : resource, \
-                },
+                    "effort" : float(resource)/(capacity * k.cap) \
+                 },
                 "providedTo" : {},
                 "suppliedFrom" : {}
         }

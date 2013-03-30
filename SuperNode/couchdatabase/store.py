@@ -68,11 +68,11 @@ def call_db():
 
 if __name__ == "__main__":
     myDB = call_db()
-    myDB.store_document({'_id':'111', 'info' : { 'capacity':100, 'resoure':34, 'avail' : 34, 'credit':34},
+    myDB.store_document({'_id':'111', 'info' : { 'capacity':100, 'resoure':34, 'avail' : 34, 'credit':34, 'effort': float(34)/100},
                                        'providedTo' : {},'suppliedFrom' : {}})
-    myDB.store_document({'_id':'222', 'info' : { 'capacity':200, 'resoure':134, 'avail' : 134, 'credit':134},
+    myDB.store_document({'_id':'222', 'info' : { 'capacity':200, 'resoure':134, 'avail' : 134, 'credit':134, 'effort': float(134)/200},
                                        'providedTo' : {},'suppliedFrom' : {}})
-    myDB.store_document({'_id':'333', 'info' : { 'capacity':300, 'resoure':14, 'avail' : 14, 'credit':14},
+    myDB.store_document({'_id':'333', 'info' : { 'capacity':300, 'resoure':14, 'avail' : 14, 'credit':14, 'effort':float(14)/300 },
                                        'providedTo' : {},'suppliedFrom' : {}})
 
     myDB.print_db()
