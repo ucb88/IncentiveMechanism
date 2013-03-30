@@ -1,8 +1,11 @@
 import sys
 from SuperNode.conn import conn_run
+from couchdatabase import  store
 
 def main():
-        conn_run.start()
+        store.call_db()  ##create db
+
+        conn_run.start() ##run the server
 
 if __name__ == "__main__":
     main()

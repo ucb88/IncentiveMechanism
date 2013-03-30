@@ -1,4 +1,5 @@
 import math
+import time
 from SuperNode.couchdatabase import store
 from SuperNode.couchdatabase.views import generate_views as view
 import coefficients as k
@@ -14,10 +15,13 @@ def Request(ON_IP, ON_PORT, amount, duration):
     totalAvailResInTheSystem = view.total_availablity()
     rmax = math.ceil(doc['info']['effort'] * totalAvailResInTheSystem)   #max number of resource that a node can request
 
+    print "--------INFO"
     print doc['info']['credit'], amount, doc['info']['credit'] >= amount, totalAvailResInTheSystem, rmax
-    if (rmax >= amount):
-        if (totalAvailResInTheSystem >= amount):
-            decision(doc, amount, duration)
+    print "------------"
+
+    if(rmax >= amount):
+        if(totalAvailResInTheSystem >= amount):
+            return decision(doc, amount, duration)
         else:
             return "There is not enough resource to meet your request."
     else:
@@ -31,7 +35,8 @@ def decision(doc, amount, duration):
 
     for n in provider_list:
         provider_id = n.keys()[0]
-        if provider_id == requestor_id or isFullySupplied == 1:
+
+        if provider_id == requestor_id :
             pass
         else:
             supplierDoc = store.call_db().get_document(provider_id)
@@ -43,37 +48,38 @@ def decision(doc, amount, duration):
             tempSupplierDoc = supplierDoc
             trans_cost = 0
             tempSharedAmount = 0
-            print "RES:", res, " AMOUNT:", amount
 
-            if res > amount:
+            if res >= amount:
                 res = res - amount
                 tempSharedAmount = amount
                 isFullySupplied = 1
             else:
-                print "DAHA VARRR"
                 amount = amount - res
                 tempSharedAmount = res
 
             trans_cost = tempSharedAmount * k.res # coeff_res
-            print "TRANSCOST:", trans_cost
 
             tempDoc = requestor(provider_id, trans_cost, tempSharedAmount, tempDoc)
             tempSupplierDoc = supplier(requestor_id, trans_cost, tempSharedAmount, tempSupplierDoc)
             store.call_db().update_document(requestor_id, tempDoc)
             store.call_db().update_document(provider_id, tempSupplierDoc)
 
+        if isFullySupplied == 1:
+            break
+
     return "REQUESTED"
 
 
 def requestor(provider_id, trans_cost, amount, tempDoc):
-    if tempDoc['suppliedFrom'].has_key(provider_id):
-        tempDoc['suppliedFrom'][provider_id] += amount
-    else:
-        tempDoc['suppliedFrom'][provider_id] = amount
 
-    #print "\t requestor charging now  ",  tempDoc['info']['credit'], trans_cost
+    if not (tempDoc['suppliedFrom'].has_key(provider_id)):
+        tempDoc['suppliedFrom'][provider_id] = []
+    else:
+        pass
+
+    tempDoc['suppliedFrom'][provider_id].append({'amount':amount, 'timestamp':time.time()})
     tempDoc['info']['credit'] -= trans_cost
-    tempDoc['info']['effort'] = float(tempDoc['info']['credit']) / \
+    tempDoc['info']['effort'] = float(tempDoc['info']['credit'] * k.res) / \
                                 (tempDoc['info']['capacity'] * k.cap)
     return tempDoc
 
@@ -86,11 +92,11 @@ def supplier(requestor_id, trans_cost, amount, tempSupplierDoc ):
 
     tempSupplierDoc['info']['avail'] -= amount
     tempSupplierDoc['info']['credit'] += trans_cost
-    tempSupplierDoc['info']['effort'] = float(tempSupplierDoc['info']['credit']) / \
+    tempSupplierDoc['info']['effort'] = float(tempSupplierDoc['info']['credit'] * k.res) / \
                                         (tempSupplierDoc['info']['capacity'] * k.cap )
     return tempSupplierDoc
 
 
 if __name__ == "__main__":
-    print Request('111', '1', 10, 1)
-    print Request('222', '1', 5, 1)
+    #print Request('111', '1', 10, 1)
+    print Request('111', '1', 5, 1)

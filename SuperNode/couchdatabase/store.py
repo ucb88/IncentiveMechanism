@@ -1,5 +1,6 @@
 import couchdb
 import settings as set
+from SuperNode.query_handler import coefficients as k
 
 db = None
 
@@ -35,16 +36,18 @@ class Database:
 
     def update_credit(self, doc_id, newCredit) :
         if self.is_exist(doc_id):
-            if self.db[doc_id].has_key('credit'):
-                tempdoc = self.get_document(doc_id)
-                tempdoc['credit'] = newCredit
+            if self.db[doc_id]['info'].has_key('credit') or self.db[doc_id]['info'].has_key('effort'):
+                tempDoc = self.get_document(doc_id)
+                tempDoc['info']['credit'] += newCredit
+                tempDoc['info']['effort'] = float(tempDoc['info']['credit'] * k.res) / \
+                                        (tempDoc['info']['capacity'] * k.cap )
             else :
-                print "There is no credit key in the client doc"
+                print "There is no 'credit' or 'effort' key in the client doc"
                 print "Client doc should be proper"
         else:
             print "non-exist document"
 
-        self.update_document(doc_id, tempdoc)
+        self.update_document(doc_id, tempDoc)
     #def updateEffort ..
     #
 
@@ -69,7 +72,7 @@ def call_db():
 if __name__ == "__main__":
     myDB = call_db()
     myDB.store_document({'_id':'111', 'info' : { 'capacity':100, 'resoure':34, 'avail' : 34, 'credit':34, 'effort': float(34)/100},
-                                       'providedTo' : {},'suppliedFrom' : {}})
+                                       'providedTo' : {},'suppliedFrom' : {}})#  {'timestamp': 111, 'info':{'111':10}}, {'timestamp': 111, 'info':{'222':5} }}})
     myDB.store_document({'_id':'222', 'info' : { 'capacity':200, 'resoure':134, 'avail' : 134, 'credit':134, 'effort': float(134)/200},
                                        'providedTo' : {},'suppliedFrom' : {}})
     myDB.store_document({'_id':'333', 'info' : { 'capacity':300, 'resoure':14, 'avail' : 14, 'credit':14, 'effort':float(14)/300 },
@@ -77,10 +80,10 @@ if __name__ == "__main__":
 
     myDB.print_db()
 
-    doc = myDB.get_document('333')
-    doc['info']['capacity'] = 1111
-    myDB.update_document('333', doc)
-    myDB.print_db()
+   # doc = myDB.get_document('333')
+   # doc['info']['capacity'] = 1111
+   # myDB.update_document('333', doc)
+   # myDB.print_db()
 
 
 

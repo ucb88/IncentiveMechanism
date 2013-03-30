@@ -1,2 +1,2 @@
-SN_IP="localhost"
+SN_IP="147.83.35.251"
 SN_PORT=8001
