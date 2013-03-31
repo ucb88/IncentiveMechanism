@@ -20,7 +20,7 @@ def Request(ON_IP, ON_PORT, amount, duration):
     print "------------"
 
     if(rmax >= amount):
-        if(totalAvailResInTheSystem >= amount):
+        if((totalAvailResInTheSystem-doc['info']['avail']) >= amount):
             return decision(doc, amount, duration)
         else:
             return "There is not enough resource to meet your request."
@@ -81,6 +81,8 @@ def requestor(provider_id, trans_cost, amount, tempDoc):
     tempDoc['info']['credit'] -= trans_cost
     tempDoc['info']['effort'] = float(tempDoc['info']['credit'] * k.res) / \
                                 (tempDoc['info']['capacity'] * k.cap)
+    if tempDoc['info']['effort'] > 1 : tempDoc['info']['effort'] = 1
+
     return tempDoc
 
 
@@ -94,6 +96,8 @@ def supplier(requestor_id, trans_cost, amount, tempSupplierDoc ):
     tempSupplierDoc['info']['credit'] += trans_cost
     tempSupplierDoc['info']['effort'] = float(tempSupplierDoc['info']['credit'] * k.res) / \
                                         (tempSupplierDoc['info']['capacity'] * k.cap )
+    if tempSupplierDoc['info']['effort'] > 1 : tempSupplierDoc['info']['effort'] = 1
+
     return tempSupplierDoc
 
 

@@ -34,22 +34,26 @@ class Database:
     def get_avail (self, doc_id):
         return self.db[doc_id]['avail']
 
-    def update_credit(self, doc_id, newCredit) :
+    def update_credit(self, doc_id, newCredit, type) : #type :0 = addtoCredit type:1 = set credit
         if self.is_exist(doc_id):
-            if self.db[doc_id]['info'].has_key('credit') or self.db[doc_id]['info'].has_key('effort'):
+            if self.db[doc_id]['info'].has_key('credit'):
                 tempDoc = self.get_document(doc_id)
-                tempDoc['info']['credit'] += newCredit
+                if type == 0:
+                    tempDoc['info']['credit'] += newCredit
+                else :
+                    tempDoc['info']['credit'] = newCredit
                 tempDoc['info']['effort'] = float(tempDoc['info']['credit'] * k.res) / \
                                         (tempDoc['info']['capacity'] * k.cap )
+                if tempDoc['info']['effort'] > 1 : tempDoc['info']['effort'] = 1
             else :
-                print "There is no 'credit' or 'effort' key in the client doc"
+                print "There is no 'credit' key in the client doc"
                 print "Client doc should be proper"
         else:
             print "non-exist document"
 
         self.update_document(doc_id, tempDoc)
     #def updateEffort ..
-    #
+
 
     def get_db(self):
         return self.db

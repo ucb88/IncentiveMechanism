@@ -10,7 +10,7 @@
     <file path="/main.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364299322239" ignored="false" />
     <file path="/__init__.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364290405150" ignored="false" />
     <file path="/conn_dispatcher.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364298819347" ignored="false" />
-    <file path="/request.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364563909900" ignored="false" />
+    <file path="/request.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364756749889" ignored="false" />
     <file path="/register.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364296139801" ignored="false" />
     <file path="/heartbeat.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364297672930" ignored="false" />
     <file path="/nondefined.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364298806708" ignored="false" />
@@ -18,6 +18,10 @@
     <file path="/paths.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364559769826" ignored="false" />
     <file path="/extract_data.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364560424704" ignored="false" />
     <file path="/leave.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364563586829" ignored="false" />
+    <file path="/main_server.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364754110878" ignored="false" />
+    <file path="/controller.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364758926744" ignored="false" />
+    <file path="/settings.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364757114479" ignored="false" />
+    <file path="/store.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364758985210" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,93 +38,50 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="conn_run.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py">
+      <file leaf-file-name="main_server.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SuperNode/main_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="32" selection-start="456" selection-end="456" vertical-scroll-proportion="0.5043478">
+            <state line="19" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#0#16#0" expanded="true" />
+                <element signature="e#1#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_client.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OrdinaryNode/main_client.py">
+      <file leaf-file-name="controller.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="10" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="32" column="20" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conn_settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="conn_dispatcher.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_dispatcher.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="26" selection-start="2101" selection-end="2115" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leave.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/leave.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="31" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="request.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="request.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/request.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="33" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0">
+            <state line="98" column="62" selection-start="3462" selection-end="3462" vertical-scroll-proportion="0.7850055">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generate_views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/views/generate_views.py">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="56" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+            <state line="5" column="11" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/register.py">
+      <file leaf-file-name="store.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/store.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="29" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_server.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SuperNode/main_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="10" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="conn_run.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="26" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
+            <state line="36" column="46" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,10 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/OrdinaryNode/conn_run.py" />
-        <option value="$PROJECT_DIR$/OrdinaryNode/conn/__init__.py" />
-        <option value="$PROJECT_DIR$/OrdinaryNode/conn/main.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/SuperNode/__init__.py" />
         <option value="$PROJECT_DIR$/SuperNode/couchbase/__init__.py" />
         <option value="$PROJECT_DIR$/OrdinaryNode/sliver_info/__init__.py" />
@@ -149,9 +106,13 @@
         <option value="$PROJECT_DIR$/SuperNode/conn/conn_settings.py" />
         <option value="$PROJECT_DIR$/SuperNode/conn/conn_run.py" />
         <option value="$PROJECT_DIR$/SuperNode/query_handler/leave.py" />
-        <option value="$PROJECT_DIR$/SuperNode/query_handler/request.py" />
         <option value="$PROJECT_DIR$/SuperNode/couchdatabase/views/generate_views.py" />
         <option value="$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py" />
+        <option value="$PROJECT_DIR$/SuperNode/main_server.py" />
+        <option value="$PROJECT_DIR$/SuperNode/query_handler/request.py" />
+        <option value="$PROJECT_DIR$/SuperNode/couchdatabase/settings.py" />
+        <option value="$PROJECT_DIR$/SuperNode/couchdatabase/controller.py" />
+        <option value="$PROJECT_DIR$/SuperNode/couchdatabase/store.py" />
       </list>
     </option>
   </component>
@@ -277,74 +238,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IncentiveMech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IncentiveMechanism" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SuperNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IncentiveMech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IncentiveMechanism" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrdinaryNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IncentiveMech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IncentiveMechanism" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrdinaryNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slivers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IncentiveMech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="IncentiveMechanism" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrdinaryNode" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -373,7 +266,7 @@
       <recent name="$PROJECT_DIR$/OrdinaryNode/conn" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main_server">
+  <component name="RunManager" selected="Python.controller">
     <configuration default="false" name="store" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -391,20 +284,39 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="main_server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="request" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SuperNode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SuperNode/query_handler" />
       <option name="IS_MODULE_SDK" value="true" />
       <module name="IncentiveMech" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SuperNode/main_server.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SuperNode/query_handler/request.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="controller" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SuperNode/couchdatabase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="IncentiveMech" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SuperNode/couchdatabase/controller.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -415,45 +327,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OrdinaryNode/conn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SuperNode/conn" />
       <option name="IS_MODULE_SDK" value="true" />
       <module name="IncentiveMech" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="main_client" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OrdinaryNode" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="IncentiveMech" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OrdinaryNode/main_client.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="generate_views" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SuperNode/couchdatabase/views" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="IncentiveMech" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SuperNode/couchdatabase/views/generate_views.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SuperNode/conn/conn_run.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -513,20 +391,36 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="main_server" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SuperNode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="IncentiveMech" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SuperNode/main_server.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.store" />
-      <item index="1" class="java.lang.String" itemvalue="Python.main_server" />
-      <item index="2" class="java.lang.String" itemvalue="Python.conn_run" />
-      <item index="3" class="java.lang.String" itemvalue="Python.main_client" />
-      <item index="4" class="java.lang.String" itemvalue="Python.generate_views" />
+      <item index="0" class="java.lang.String" itemvalue="Python.main_server" />
+      <item index="1" class="java.lang.String" itemvalue="Python.store" />
+      <item index="2" class="java.lang.String" itemvalue="Python.request" />
+      <item index="3" class="java.lang.String" itemvalue="Python.controller" />
+      <item index="4" class="java.lang.String" itemvalue="Python.conn_run" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.main_server" />
-        <item index="1" class="java.lang.String" itemvalue="Python.generate_views" />
-        <item index="2" class="java.lang.String" itemvalue="Python.main_client" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.controller" />
+        <item index="1" class="java.lang.String" itemvalue="Python.request" />
+        <item index="2" class="java.lang.String" itemvalue="Python.store" />
         <item index="3" class="java.lang.String" itemvalue="Python.conn_run" />
-        <item index="4" class="java.lang.String" itemvalue="Python.store" />
       </list>
     </recent_temporary>
   </component>
@@ -559,22 +453,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25706372" sideWeight="0.67094016" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25706372" sideWeight="0.6965812" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957264" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30341882" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32828283" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -636,27 +530,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OrdinaryNode/slivers/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="19" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OrdinaryNode/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="19" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OrdinaryNode/slivers/paths.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="22" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
@@ -687,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/main_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="10" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OrdinaryNode/main_client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="10" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
@@ -703,14 +569,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/register.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="29" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
+        <state line="5" column="29" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -725,30 +584,71 @@
     <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/leave.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="31" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1364563589792" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="32" selection-start="456" selection-end="456" vertical-scroll-proportion="-11.6">
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="26" selection-start="413" selection-end="413" vertical-scroll-proportion="0.2003339">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SuperNode/main_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/views/generate_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="56" selection-start="251" selection-end="251" vertical-scroll-proportion="0.115766264">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="11" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="20" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/store.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="46" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/request.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="33" selection-start="926" selection-end="926" vertical-scroll-proportion="0.0">
+        <state line="98" column="62" selection-start="3462" selection-end="3462" vertical-scroll-proportion="0.7850055">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/views/generate_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="56" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="32" selection-start="456" selection-end="456" vertical-scroll-proportion="0.5043478">
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
