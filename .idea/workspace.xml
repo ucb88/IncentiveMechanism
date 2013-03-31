@@ -60,11 +60,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="request.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="request.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/request.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="62" selection-start="3462" selection-end="3462" vertical-scroll-proportion="0.7850055">
+            <state line="98" column="62" selection-start="3462" selection-end="3462" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conn_run.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="0" selection-start="642" selection-end="642" vertical-scroll-proportion="0.5788313">
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,12 +118,12 @@
         <option value="$PROJECT_DIR$/SuperNode/conn/conn_run.py" />
         <option value="$PROJECT_DIR$/SuperNode/query_handler/leave.py" />
         <option value="$PROJECT_DIR$/SuperNode/couchdatabase/views/generate_views.py" />
-        <option value="$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py" />
         <option value="$PROJECT_DIR$/SuperNode/main_server.py" />
         <option value="$PROJECT_DIR$/SuperNode/query_handler/request.py" />
         <option value="$PROJECT_DIR$/SuperNode/couchdatabase/settings.py" />
         <option value="$PROJECT_DIR$/SuperNode/couchdatabase/controller.py" />
         <option value="$PROJECT_DIR$/SuperNode/couchdatabase/store.py" />
+        <option value="$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py" />
       </list>
     </option>
   </component>
@@ -235,6 +246,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IncentiveMech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IncentiveMechanism" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrdinaryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IncentiveMech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IncentiveMechanism" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrdinaryNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -453,7 +496,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -590,15 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="32" selection-start="456" selection-end="456" vertical-scroll-proportion="-11.6">
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="26" selection-start="413" selection-end="413" vertical-scroll-proportion="0.2003339">
@@ -647,8 +681,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/request.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="62" selection-start="3462" selection-end="3462" vertical-scroll-proportion="0.7850055">
+        <state line="98" column="62" selection-start="3462" selection-end="3462" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="642" selection-end="642" vertical-scroll-proportion="0.5788313">
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

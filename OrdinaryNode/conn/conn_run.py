@@ -25,11 +25,15 @@ def main():
     capacity = info.num_of_lxcs()
 
     try:
-        res = proxy.request(1,2)
-        #res = proxy.leaveResources()
-        #res = proxy.request(1,2)
-        #res = proxy.register(capacity, capacity)
+        res = proxy.register(capacity, capacity)
         print res
+        time.sleep(2)
+        res = proxy.request(1,2)
+        print res
+        time.sleep(20)
+        res = proxy.leaveResources()
+        print res
+
     except socket.error as e:
         if e.errno == errno.ECONNREFUSED  or e.errno == 101:
             print "SERVER is not Working"
