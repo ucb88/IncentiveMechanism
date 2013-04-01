@@ -1,6 +1,13 @@
 from SuperNode.couchdatabase import store
+import logging
+
+loggerLev = logging.getLogger('Leave')
+
 
 def Leave(ON_IP,ON_PORT):
+
+    global loggerLev
+    loggerLev.info("The node:%s is leaving all resources" %ON_IP)
 
     tempDoc = store.call_db().get_document(ON_IP)
     for id in tempDoc['suppliedFrom'].keys():
@@ -14,8 +21,11 @@ def Leave(ON_IP,ON_PORT):
 
 def regain(allocaterId, tempSupplierDoc):
 
+    global loggerLev
+
     allocated = tempSupplierDoc['providedTo'][allocaterId]
     tempSupplierDoc['info']['avail'] += allocated
+    loggerLev.info("The node:%s got its resources:%s back from %s" %(tempSupplierDoc['_id'],allocated,allocaterId))
     del tempSupplierDoc['providedTo'][allocaterId]
     return tempSupplierDoc
 
@@ -24,6 +34,7 @@ def reallocate(providerId,tempDoc):
 
     provided = tempDoc['suppliedFrom'][providerId]
     del tempDoc['suppliedFrom'][providerId]
+    loggerLev.info("The node:%s left the resources back to %s" %(tempDoc['_id'],providerId))
     return tempDoc
 
 

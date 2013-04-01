@@ -1,16 +1,21 @@
 import couchdb
 import settings as set
 from SuperNode.query_handler import coefficients as k
+import logging
+
+
+loggerDB = logging.getLogger('Database')
 
 db = None
 
 class Database:
-
+    global loggerDB
     def __init__(self, name = set.DB_NAME):
         couch = couchdb.Server(set.DB_SERVER_IP+':'+set.DB_SERVER_PORT)
 
         try:
             db = couch.create(name)
+            loggerDB.info("Database %s is creating" %name )
         except:
             db = couch[name]
 
@@ -34,14 +39,11 @@ class Database:
     def get_avail (self, doc_id):
         return self.db[doc_id]['avail']
 
-    def update_credit(self, doc_id, newCredit, type) : #type :0 = addtoCredit type:1 = set credit
+    def update_credit(self, doc_id, newCredit) : #type :0 = addtoCredit type:1 = set credit
         if self.is_exist(doc_id):
             if self.db[doc_id]['info'].has_key('credit'):
                 tempDoc = self.get_document(doc_id)
-                if type == 0:
-                    tempDoc['info']['credit'] += newCredit
-                else :
-                    tempDoc['info']['credit'] = newCredit
+                tempDoc['info']['credit'] += newCredit
                 tempDoc['info']['effort'] = float(tempDoc['info']['credit'] * k.res) / \
                                         (tempDoc['info']['capacity'] * k.cap )
                 if tempDoc['info']['effort'] > 1 : tempDoc['info']['effort'] = 1

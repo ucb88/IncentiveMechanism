@@ -4,7 +4,10 @@ from SuperNode.query_handler import request as req
 from SuperNode.query_handler import leave as l
 from SuperNode.query_handler import heartbeat as h
 from SuperNode.query_handler import nondefined as non
+from SuperNode.log import log_config as log
 
+
+loggerDis = log.logging.getLogger('Dispatcher')
 ON_IP=None
 ON_PORT=None
 
@@ -48,16 +51,18 @@ class LoggingSimpleXMLRPCRequestHandler(SimpleXMLRPCServer.SimpleXMLRPCRequestHa
             self.connection.shutdown(1)
 
 class Queries:
-        global ON_IP, ON_PORT
+        global ON_IP, ON_PORT, loggerDis
         def register(self, capacity, resource):
+            loggerDis.info("Register query from:%s ,capacity:%s, resource:%s " %(ON_IP,capacity,resource))
             return res.Register(ON_IP,ON_PORT,capacity,resource)
-            #return x+y+100
 
         def request(self, reqAmount, reqDuration):
-                return req.Request(ON_IP,ON_PORT,reqAmount, reqDuration)
+            loggerDis.info("Request query from:%s amount:%s " %(ON_IP,reqAmount))
+            return req.Request(ON_IP,ON_PORT,reqAmount, reqDuration)
 
         def leaveResources (self):
-                return l.Leave(ON_IP,ON_PORT)
+            loggerDis.info("Leave query from:%s" %(ON_IP))
+            return l.Leave(ON_IP,ON_PORT)
 
         def heartbeat(self):
                 return h.heartbeat.Heartbeat(ON_IP,ON_PORT)
