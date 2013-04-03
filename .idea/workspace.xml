@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/conn_settings.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364560625534" ignored="false" />
     <file path="/dispatcher.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364288897669" ignored="false" />
-    <file path="/conn_run.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364561846952" ignored="false" />
+    <file path="/conn_run.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364913799571" ignored="false" />
     <file path="/main.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364299322239" ignored="false" />
     <file path="/__init__.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364290405150" ignored="false" />
     <file path="/conn_dispatcher.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364298819347" ignored="false" />
@@ -18,10 +18,11 @@
     <file path="/paths.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364559769826" ignored="false" />
     <file path="/extract_data.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364560424704" ignored="false" />
     <file path="/leave.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364563586829" ignored="false" />
-    <file path="/main_server.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364754110878" ignored="false" />
+    <file path="/main_server.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364899548963" ignored="false" />
     <file path="/controller.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364758926744" ignored="false" />
     <file path="/settings.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364757114479" ignored="false" />
     <file path="/store.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364758985210" ignored="false" />
+    <file path="/generate_views.py" changelist="16653a3c-38df-4756-82c5-002827ad8842" time="1364989280199" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,41 +42,35 @@
       <file leaf-file-name="main_server.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SuperNode/main_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#1#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="20" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="request.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/request.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="62" selection-start="3462" selection-end="3462" vertical-scroll-proportion="0.0">
+            <state line="16" column="67" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conn_run.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py">
+      <file leaf-file-name="conn_run.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="642" selection-end="642" vertical-scroll-proportion="0.5788313">
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
+            <state line="11" column="63" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conn_settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="14" selection-start="7" selection-end="20" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="19" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,10 +84,48 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="generate_views.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/views/generate_views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="58" selection-start="253" selection-end="253" vertical-scroll-proportion="0.06569343">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="request.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/request.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="0" selection-start="2693" selection-end="2693" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="store.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/store.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="46" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
+            <state line="27" column="26" selection-start="632" selection-end="642" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all.log" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/all.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controller.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="12" selection-start="2039" selection-end="2039" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,24 +147,24 @@
         <option value="$PROJECT_DIR$/OrdinaryNode/slivers/paths.py" />
         <option value="$PROJECT_DIR$/OrdinaryNode/slivers/extract_data.py" />
         <option value="$PROJECT_DIR$/OrdinaryNode/conn/conn_settings.py" />
-        <option value="$PROJECT_DIR$/SuperNode/conn/conn_settings.py" />
-        <option value="$PROJECT_DIR$/SuperNode/conn/conn_run.py" />
         <option value="$PROJECT_DIR$/SuperNode/query_handler/leave.py" />
-        <option value="$PROJECT_DIR$/SuperNode/couchdatabase/views/generate_views.py" />
-        <option value="$PROJECT_DIR$/SuperNode/main_server.py" />
-        <option value="$PROJECT_DIR$/SuperNode/query_handler/request.py" />
         <option value="$PROJECT_DIR$/SuperNode/couchdatabase/settings.py" />
-        <option value="$PROJECT_DIR$/SuperNode/couchdatabase/controller.py" />
         <option value="$PROJECT_DIR$/SuperNode/couchdatabase/store.py" />
         <option value="$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py" />
+        <option value="$PROJECT_DIR$/SuperNode/main_server.py" />
+        <option value="$PROJECT_DIR$/SuperNode/conn/conn_settings.py" />
+        <option value="$PROJECT_DIR$/SuperNode/conn/conn_run.py" />
+        <option value="$PROJECT_DIR$/SuperNode/couchdatabase/controller.py" />
+        <option value="$PROJECT_DIR$/SuperNode/query_handler/request.py" />
+        <option value="$PROJECT_DIR$/SuperNode/couchdatabase/views/generate_views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="y" value="52" />
     <option name="width" value="1855" />
-    <option name="height" value="1056" />
+    <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -259,7 +292,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OrdinaryNode" />
+              <option name="myItemId" value="SuperNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,10 +313,6 @@
               <option name="myItemId" value="OrdinaryNode" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -289,11 +322,11 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/OrdinaryNode/slivers/paths.py" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -309,7 +342,7 @@
       <recent name="$PROJECT_DIR$/OrdinaryNode/conn" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.controller">
+  <component name="RunManager" selected="Python.main_server">
     <configuration default="false" name="store" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -459,11 +492,12 @@
       <item index="4" class="java.lang.String" itemvalue="Python.conn_run" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.controller" />
-        <item index="1" class="java.lang.String" itemvalue="Python.request" />
-        <item index="2" class="java.lang.String" itemvalue="Python.store" />
-        <item index="3" class="java.lang.String" itemvalue="Python.conn_run" />
+        <item index="1" class="java.lang.String" itemvalue="Python.conn_run" />
+        <item index="2" class="java.lang.String" itemvalue="Python.conn_run" />
+        <item index="3" class="java.lang.String" itemvalue="Python.request" />
+        <item index="4" class="java.lang.String" itemvalue="Python.store" />
       </list>
     </recent_temporary>
   </component>
@@ -495,19 +529,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <frame x="65" y="52" width="1855" height="1028" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33810574" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25706372" sideWeight="0.6965812" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2603878" sideWeight="0.66189426" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957264" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30341882" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31196582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -573,85 +607,80 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OrdinaryNode/slivers/paths.py">
+    <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/register.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="22" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="29" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OrdinaryNode/slivers/extract_data.py">
+    <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_dispatcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="26" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state line="58" column="26" selection-start="2101" selection-end="2115" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/leave.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="31" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/conn_settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="16" selection-start="40" selection-end="53" vertical-scroll-proportion="0.050083473">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OrdinaryNode/main_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="10" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/register.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="29" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_dispatcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="26" selection-start="2101" selection-end="2115" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/leave.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="31" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1364563589792" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="26" selection-start="413" selection-end="413" vertical-scroll-proportion="0.2003339">
+        <state line="3" column="15" selection-start="66" selection-end="70" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SuperNode/main_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1#36#0" expanded="true" />
-          </folding>
+        <state line="16" column="67" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/views/generate_views.py">
+    <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="56" selection-start="251" selection-end="251" vertical-scroll-proportion="0.115766264">
+        <state line="11" column="63" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="12" selection-start="2039" selection-end="2039" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SuperNode/all.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/all.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="19" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SuperNode/conn/conn_settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="14" selection-start="7" selection-end="20" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -663,35 +692,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="20" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/store.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="46" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0">
+        <state line="27" column="26" selection-start="632" selection-end="642" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SuperNode/query_handler/request.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="62" selection-start="3462" selection-end="3462" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="80" column="0" selection-start="2693" selection-end="2693" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OrdinaryNode/conn/conn_run.py">
+    <entry file="file://$PROJECT_DIR$/SuperNode/couchdatabase/views/generate_views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="642" selection-end="642" vertical-scroll-proportion="0.5788313">
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
+        <state line="7" column="58" selection-start="253" selection-end="253" vertical-scroll-proportion="0.06569343">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,4 @@
+04-02 16:56 Main         INFO     The application is starting
+04-02 16:56 Database     INFO     Database incmech_db is creating
+04-02 16:56 Dispatcher   INFO     Register query from:84.88.85.1 ,capacity:3, resource:3 
+04-02 16:56 Register     INFO     The node:84.88.85.1 is registered with capacity:3 resources:3

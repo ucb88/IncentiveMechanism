@@ -16,7 +16,5 @@ def main():
         conn_run.start() ##run the server
         #controller.start)##run controller for checking the credits
 
-
-
 if __name__ == "__main__":
     main()

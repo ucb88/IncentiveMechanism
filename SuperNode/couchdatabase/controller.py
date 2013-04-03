@@ -62,7 +62,7 @@ if __name__ == "__main__":
         print "\t -------------SLEEP:",i
         loggerCont.info("************** after controlled ************** ")
         for j in db:
-            #print "\t", db[j]
+            print "\t", db[j]
             loggerCont.info("\t %s" %db[j])
         print "\t -------------SLEEP:",i
         i += 1

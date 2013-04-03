@@ -4,8 +4,9 @@ from SuperNode.couchdatabase import store
 from SuperNode.couchdatabase.views import generate_views as view
 import coefficients as k
 import logging
+import threading
 
-
+sem = threading.Semaphore(value=1)
 loggerReq = logging.getLogger('Request')
 
 def Request(ON_IP, ON_PORT, amount, duration):
@@ -36,8 +37,10 @@ def Request(ON_IP, ON_PORT, amount, duration):
 
 def decision(doc, amount, duration):
 
-    global loggerReq
+    global sem
+    sem.acquire()
 
+    global loggerReq
     isFullySupplied = 0
     requestor_id = doc['_id']
     provider_list = view.sorted_list()
@@ -76,6 +79,7 @@ def decision(doc, amount, duration):
         if isFullySupplied == 1:
             break
 
+    sem.release()
     return "REQUESTED"
 
 
@@ -93,6 +97,7 @@ def requestor(provider_id, trans_cost, amount, tempDoc):
                                 (tempDoc['info']['capacity'] * k.cap)
     if tempDoc['info']['effort'] > 1 : tempDoc['info']['effort'] = 1
     loggerReq.info("The node: %s is charged %s from the node:%s" %(tempDoc['_id'],trans_cost, provider_id))
+
     return tempDoc
 
 

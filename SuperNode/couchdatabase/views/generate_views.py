@@ -5,7 +5,7 @@ from SuperNode.couchdatabase import store
 
 def sorted_list():
     map_func_for_sorted = """function(doc) { \
-                                if(doc['info'].credit >= 0) \
+                                if('credit' in doc['info']) \
                                     emit(doc['info'].credit, doc._id); \
                     }"""
 
@@ -36,6 +36,6 @@ def total_availablity():
 if __name__ == "__main__":
     list = sorted_list()
     for i in list:
-        print i
+        print i.keys()[0]
 
     print "total avail:", total_availablity()
